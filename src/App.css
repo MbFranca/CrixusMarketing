@@ -892,11 +892,3 @@ footer {
   }
 }
 
-/* ===== MODO ESCURO (OPCIONAL) ===== */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --gray-50: #111827;
-    --gray-100: #1f2937;
-    --gray-900: #f9fafb;
-  }
-}
