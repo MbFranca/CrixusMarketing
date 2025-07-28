@@ -47,7 +47,7 @@
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
+  --font-size-xl: 1.70rem;
   --font-size-2xl: 1.5rem;
   --font-size-3xl: 1.875rem;
   --font-size-4xl: 2.25rem;
@@ -685,6 +685,18 @@ footer {
     padding: var(--spacing-12) var(--spacing-4);
   }
 
+  section.hero {
+    background: linear-gradient(135deg, var(--primary-100) 0%, var(--primary-200) 100%);
+  }
+
+  section#depoimentos {
+    background: linear-gradient(135deg, var(--primary-100) 0%, var(--primary-50) 100%);
+  }
+
+  .servicos-avancados-section {
+    background: linear-gradient(135deg, var(--primary-800) 0%, var(--primary-700) 100%);
+  }
+
   .static-items-grid {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: var(--spacing-4);
@@ -718,6 +730,18 @@ footer {
     --spacing-12: 1.5rem;
     --spacing-8: 1.5rem;
     --spacing-6: 1rem;
+  }
+
+  section.hero {
+    background: linear-gradient(135deg, var(--primary-100) 0%, var(--primary-200) 100%);
+  }
+
+  section#depoimentos {
+    background: linear-gradient(135deg, var(--primary-100) 0%, var(--primary-50) 100%);
+  }
+
+  .servicos-avancados-section {
+    background: linear-gradient(135deg, var(--primary-800) 0%, var(--primary-700) 100%);
   }
 
   header {

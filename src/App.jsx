@@ -212,7 +212,7 @@ export default function HomePage() {
       </footer>
       <div className="iconZap">
         <a
-          href="https://wa.me/seunumerodetelefone"
+          href="https://wa.me/+5522999678524"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="WhatsApp"
