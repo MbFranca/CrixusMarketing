@@ -12,7 +12,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Reset básico para garantir layout de largura total */
 * {
   box-sizing: border-box;
 }
@@ -22,11 +21,8 @@ body {
   padding: 0;
   width: 100%;
   min-height: 100vh;
-  /* Removido: display: flex; place-items: center; */
-  /* Essas propriedades estavam centralizando o conteúdo */
 }
 
-/* Garantir que o root do React ocupe toda a largura */
 #root {
   width: 100%;
   min-height: 100vh;
