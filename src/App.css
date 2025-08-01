@@ -926,6 +926,17 @@ footer {
     --font-size-3xl: 1.125rem;
   }
 
+  section.hero::before {
+    display: none;
+  }
+
+  section.hero {
+    padding: var(--spacing-8) var(--spacing-3);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url("/public/images/Business\ Event\ Website\ in\ Blue\ Modern\ Style.jpg");
+  }
+
   .static-items-grid {
     grid-template-columns: repeat(2, 1fr);
   }
