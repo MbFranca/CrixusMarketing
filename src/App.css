@@ -813,6 +813,10 @@ footer {
     margin-bottom: var(--spacing-4);
   }
 
+  section.hero::before {
+    display: none;
+  }
+
   section.hero p {
     font-size: var(--font-size-base);
     margin-bottom: var(--spacing-6);
