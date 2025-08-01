@@ -48,7 +48,7 @@ export default function HomePage() {
         </h2>
         <p>
           Na <span className="highlight-box">Crixus Marketing</span>, criamos{" "}
-          <span className="highlight-underline">
+          <span className="highlight-underline" style={{ color: "white" }}>
             estratégias personalizadas
           </span>{" "}
           que combinam criatividade, dados e tendências para acelerar o{" "}

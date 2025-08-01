@@ -93,15 +93,10 @@ header {
   align-items: center;
   padding: var(--spacing-4) var(--spacing-6);
 
-  /* fundo escuro translúcido com blur */
-  background: rgba(30, 41, 59, 0.6);
-  /* esse valor RGB = #1e293b = var(--gray-800) aproximadamente */
+  background: rgba(40, 45, 85, 0.85);
+  /* novo fundo violeta escuro */
   backdrop-filter: blur(10px);
-
-  /* borda suave com cor clara da paleta */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
-  /* sombra leve */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   box-shadow: var(--shadow-lg);
 
   color: var(--gray-50);
@@ -296,7 +291,7 @@ section.hero button a {
   text-decoration: none;
 }
 
-section.hero > button::before {
+section.hero>button::before {
   content: '';
   position: absolute;
   top: 0;
@@ -312,7 +307,7 @@ section.hero button:hover {
   box-shadow: var(--shadow-xl);
 }
 
-section.hero > button:hover::before {
+section.hero>button:hover::before {
   left: 100%;
 }
 
