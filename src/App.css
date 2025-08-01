@@ -176,7 +176,7 @@ section.hero {
   overflow: hidden;
   width: 100%;
   height: 100vh;
-  background-image: url('../public/images/Business Event Website in Blue Modern Style.jpg');
+  background-image: url("/public/images/backgroundHero.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -242,11 +242,15 @@ section.hero {
 section.hero::before {
   content: '';
   position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 50, 0.4);
-  /* Azul escuro translúcido para contraste */
-  backdrop-filter: blur(2px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  /* altura apenas atrás do título */
+  background: linear-gradient(to bottom, rgba(0, 0, 50, 0.3), transparent);
   z-index: 1;
+  pointer-events: none;
+  /* não interfere na interação */
 }
 
 section.hero>* {
@@ -292,7 +296,7 @@ section.hero button a {
   text-decoration: none;
 }
 
-section.hero button::before {
+section.hero > button::before {
   content: '';
   position: absolute;
   top: 0;
@@ -308,7 +312,7 @@ section.hero button:hover {
   box-shadow: var(--shadow-xl);
 }
 
-section.hero button:hover::before {
+section.hero > button:hover::before {
   left: 100%;
 }
 
@@ -924,6 +928,11 @@ footer {
 
   .static-items-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  section.hero {
+    background-image: url("/public/images/backgroundHero.jpg");
+    background-size: auto;
   }
 
   .servicos-avancados-title br {
