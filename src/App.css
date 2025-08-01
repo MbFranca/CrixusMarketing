@@ -93,10 +93,10 @@ header {
   align-items: center;
   padding: var(--spacing-4) var(--spacing-6);
 
-  background: rgba(40, 45, 85, 0.85);
+  background: rgba(88, 92, 226, 0.95);
   /* novo fundo violeta escuro */
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+background: linear-gradient(to right, #4e52d9, #585CE2);
   box-shadow: var(--shadow-lg);
 
   color: var(--gray-50);
