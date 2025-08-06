@@ -47,7 +47,7 @@ export default function HomePage() {
 
   useEffect(() => {
     fetchSheetsDB();
-  }, []);
+  });
 
   return (
     <main>
@@ -154,7 +154,10 @@ export default function HomePage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/images/5.png" alt="" />
+              <img
+                src={image.length > 0 ? `${image[4].logo_url}` : "na"}
+                alt=""
+              />
             </a>
           </div>
         </div>
