@@ -46,7 +46,9 @@ export default function HomePage() {
   };
 
   useEffect(() => {
-    fetchSheetsDB();
+    if (image.length == 0) {
+      fetchSheetsDB();
+    }
   }, []);
 
   return (
