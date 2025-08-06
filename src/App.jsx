@@ -47,7 +47,7 @@ export default function HomePage() {
 
   useEffect(() => {
     fetchSheetsDB();
-  });
+  }, []);
 
   return (
     <main>
@@ -103,10 +103,16 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="static-item"
             >
-              <img
-                src={image.length > 0 ? `${image[0].logo_url}` : "na"}
-                alt=""
-              />
+              {image.length > 0 && (
+                <img
+                  src={
+                    image.length > 0
+                      ? `${image[0].logo_url}`
+                      : "/images/placeholder.png"
+                  }
+                  alt=""
+                />
+              )}
             </a>
           </div>
           <div>
@@ -116,10 +122,16 @@ export default function HomePage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src={image.length > 0 ? `${image[1].logo_url}` : "na"}
-                alt=""
-              />
+              {image.length > 0 && (
+                <img
+                  src={
+                    image.length > 0
+                      ? `${image[1].logo_url}`
+                      : "/images/placeholder.png"
+                  }
+                  alt=""
+                />
+              )}
             </a>
           </div>
           <div className="static-item">
@@ -129,10 +141,16 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="static-item"
             >
-              <img
-                src={image.length > 0 ? `${image[3].logo_url}` : "na"}
-                alt=""
-              />
+              {image.length > 0 && (
+                <img
+                  src={
+                    image.length > 0
+                      ? `${image[3].logo_url}`
+                      : "/images/placeholder.png"
+                  }
+                  alt=""
+                />
+              )}
             </a>
           </div>
           <div className="">
@@ -141,10 +159,16 @@ export default function HomePage() {
               target="blank"
               className="static-item"
             >
-              <img
-                src={image.length > 0 ? `${image[2].logo_url}` : "na"}
-                alt=""
-              />
+              {image.length > 0 && (
+                <img
+                  src={
+                    image.length > 0
+                      ? `${image[2].logo_url}`
+                      : "/images/placeholder.png"
+                  }
+                  alt=""
+                />
+              )}
             </a>
           </div>
           <div>
@@ -154,10 +178,16 @@ export default function HomePage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src={image.length > 0 ? `${image[4].logo_url}` : "na"}
-                alt=""
-              />
+              {image.length > 0 && (
+                <img
+                  src={
+                    image.length > 0
+                      ? `${image[4].logo_url}`
+                      : "/images/placeholder.png"
+                  }
+                  alt=""
+                />
+              )}
             </a>
           </div>
         </div>
