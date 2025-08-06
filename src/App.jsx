@@ -1,11 +1,11 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import "./App.css";
 
 export default function HomePage() {
   const form = useRef();
-
+  const [image, setImage] = useState([]);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -26,6 +26,28 @@ export default function HomePage() {
         }
       );
   };
+
+  const fetchSheetsDB = async () => {
+    try {
+      const res = await fetch("https://sheetdb.io/api/v1/edxh3af4xs0z7");
+      if (!res.ok) {
+        throw new Error(`res status: ${res.status}`);
+      }
+      const result = await res.json();
+      console.log(result);
+      if (result) {
+        setImage(result);
+      }
+    } catch (error) {
+      console.error(error);
+    } finally {
+      console.log(image);
+    }
+  };
+
+  useEffect(() => {
+    fetchSheetsDB();
+  }, []);
 
   return (
     <main>
@@ -81,7 +103,10 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="static-item"
             >
-              <img src="/images/1.png" alt="" />
+              <img
+                src={image.length > 0 ? `${image[0].logo_url}` : "na"}
+                alt=""
+              />
             </a>
           </div>
           <div>
@@ -91,7 +116,10 @@ export default function HomePage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/images/2.png" alt="" />
+              <img
+                src={image.length > 0 ? `${image[1].logo_url}` : "na"}
+                alt=""
+              />
             </a>
           </div>
           <div className="static-item">
@@ -101,7 +129,10 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="static-item"
             >
-              <img src="/images/3.png" alt="" />
+              <img
+                src={image.length > 0 ? `${image[3].logo_url}` : "na"}
+                alt=""
+              />
             </a>
           </div>
           <div className="">
@@ -110,7 +141,10 @@ export default function HomePage() {
               target="blank"
               className="static-item"
             >
-              <img src="/images/4.png" alt="" />
+              <img
+                src={image.length > 0 ? `${image[2].logo_url}` : "na"}
+                alt=""
+              />
             </a>
           </div>
           <div>
